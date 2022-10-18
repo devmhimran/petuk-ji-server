@@ -31,7 +31,7 @@ app.post('/contact-form', (req, res) => {
         from: 'customer.care@petukji.in',
         to: formData.email, // An array if you have multiple recipients.
         subject: 'Petuk Ji Support',
-        html: `Hi ${formData.name}, We collect your feedback. Stay tune with us we will contact as soon as possible 
+        html: `Hi ${formData.name}, We collect your feedback. Stay tuned with us we will contact as soon as possible 
         <br>
         <br>
         Support <br>
