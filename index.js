@@ -10,7 +10,13 @@ require('dotenv').config()
 
 
 app.get('/', (req, res) => {
-  res.send('Hello World!')
+  res.send('Welcome to Petuk Ji Server')
+})
+
+app.post('/contact-form', (req, res) =>{
+    const formData = req.body;
+    console.log(formData)
+    res.send(formData)
 })
 
 app.listen(port, () => {
